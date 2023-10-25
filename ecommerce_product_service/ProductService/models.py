@@ -12,3 +12,34 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ProductCategory(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+    
+class ProductImage(models.Model):
+    product_id = models.IntegerField()
+    image_url = models.URLField()
+
+    def __str__(self):
+        return self.name
+    
+class ProductInventory(models.Model):
+    product_id = models.IntegerField()
+    sku = models.TextField()
+    stock_quantity = models.PositiveIntegerField()
+    reorder_threshold = models.PositiveIntegerField()
+
+    def __str__(self):
+        return self.name
+    
+class ProductManufacturers(models.Model):
+    name = models.CharField(max_length=255)
+    website = models.URLField()
+
+    def __str__(self):
+        return self.name
