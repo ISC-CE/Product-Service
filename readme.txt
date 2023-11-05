@@ -3,7 +3,7 @@ Prerequisite - Python3 or higher
 1. Clone the git repository to your local machine
 2. Go to product-service directory
 3. Create and activate python virtual environment
-    python -m venv venv
+    python3 -m venv venv
 
     To activate your virtual environment,
         In Windows: 
