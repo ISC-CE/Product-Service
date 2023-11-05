@@ -1,0 +1,478 @@
+{
+	"info": {
+		"_postman_id": "216383b3-6c7b-4bee-97df-3b072acbe11d",
+		"name": "ProductService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30514925"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ListProducts",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 1\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/Product",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 1\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/Product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProduct",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"product_name\": \"Sample Product\",\n            \"product_description\": \"This is a sample Product\",\n            \"price\": \"1.00\",\n            \"stock_quantity\": 1\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/Product",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"product_name\": \"Updated Sample Product\",\n            \"product_description\": \"This is a sample Product\",\n            \"price\": \"15.00\",\n            \"stock_quantity\": 3\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/Product/113",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Product",
+								"113"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"product_name\": \"Updated Sample Product\",\n            \"product_description\": \"This is a sample Product\",\n            \"price\": \"15.00\",\n            \"stock_quantity\": 3\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/Product/115",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Product",
+								"115"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProductImage",
+			"item": [
+				{
+					"name": "ListProductImages",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/ProductImage",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductImageById",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/ProductImage/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductImage",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProductImage",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 1\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductImage",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProductImage",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 116\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductImage/113",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductImage",
+								"113"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProductImage",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 116\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductImage/114",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductImage",
+								"114"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProductReview",
+			"item": [
+				{
+					"name": "ListProductReviews",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 116\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductReview",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductReviewById",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"image_url\": \"https://m.media-amazon.com/images/I/612yrAXpo-L._AC_UY218_.jpg\",\n            \"created_at\": null,\n            \"product\": 116\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductReview/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductReview",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProductReview",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"user_id\": null,\n            \"rating\": 4,\n            \"review_title\": \"Test Review\",\n            \"review_text\": \"Sample Review\",\n            \"product\": 3\n        }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductReview",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProductReview",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"user_id\": null,\n            \"rating\": 5,\n            \"review_title\": \"Updated Test Review\",\n            \"review_text\": \"Sample Review\",\n            \"product\": 4\n        }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductReview/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductReview",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProductReview",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"user_id\": null,\n            \"rating\": 5,\n            \"review_title\": \"Test Review\",\n            \"review_text\": \"Sample Review\",\n            \"product\": 4\n        }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/ProductReview/13",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ProductReview",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
