@@ -40,6 +40,6 @@ class ProductReview(models.Model):
     rating = models.PositiveIntegerField()
     review_title = models.TextField(null=True, blank=True)
     review_text = models.TextField(null=True, blank=True)
-    review_date = models.DateTimeField(auto_now_add=True)
+    review_date = models.DateTimeField(auto_now=True)
 
   

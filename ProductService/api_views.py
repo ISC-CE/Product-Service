@@ -79,7 +79,7 @@ class ProductImageViewSet(viewsets.ModelViewSet):
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
-        result = common_delete(instance, data, ProductImageSerializer)
+        result = common_delete(instance)
         message = result.get('message', '')
         if result['success']:
             return JsonResponse({'message': message}, status=204)
@@ -131,7 +131,7 @@ class ProductReviewViewSet(viewsets.ModelViewSet):
         result = common_delete(instance)
         message = result.get('message', '')
         if result['success']:
-            return JsonResponse({'message': message, 'data': result['data']}, status=200)
+            return JsonResponse({'message': message}, status=204)
         return JsonResponse({'error': message, 'errors': result['errors']}, status=400)
 
     def list(self, request, *args, **kwargs):
